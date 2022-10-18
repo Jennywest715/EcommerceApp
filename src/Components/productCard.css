@@ -1,0 +1,23 @@
+.card {
+    border: 2px solid gray;
+    margin: 20px;
+    padding: 5px;
+    flex: 1 0 21%;
+    width: 400px;
+    cursor: pointer;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+}
+.product-image{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: block;
+}
+
+.product-details {
+    margin: 10px;
+}
