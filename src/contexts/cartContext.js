@@ -9,20 +9,24 @@ const cartContext = createContext({
 const CartProvider = ({children}) => {
      // Products will be a nested map {item_id: {itemDetails, quantity}}
    const [products, setProducts] = useState({});
-   const addItem = (productID, product) => {
+   const addItem = (productID, product, count) => {
      if (products.hasOwnProperty(productID)) {
-        setProducts(...(products[productID].count++))
+        products[productID].count+=count
+        setProducts({...products})
      } else {
-        setProducts({...products, productID: {details: product, count: 1}})
+        let newProduct = {}
+        newProduct[productID] = {details: product, count: count};
+        setProducts({...products, ...newProduct})
      }
    }
  
    const removeItem = (productID) => {
-    setProducts(...(delete products[productID]))
+    delete products[productID]
+    setProducts({...products})
    }
 
   return (
-    <cartContext.Provider value={{products, addItem, removeItem }}>
+    <cartContext.Provider value={{items: products, addItem: addItem, removeItem: removeItem }}>
       {children}
     </cartContext.Provider>
   );

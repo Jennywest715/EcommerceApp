@@ -1,7 +1,10 @@
 import { withCart } from "../contexts/cartContext";
+import "./checkout.css";
 
-function Checkout({ products, addProduct, removeProduct }) {
-    <div>Checkout</div>
+function Checkout(context) {
+    return (
+        <div className="container">Checkout</div>
+    )
 }
 
 export default withCart(Checkout)
