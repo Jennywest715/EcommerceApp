@@ -2,7 +2,7 @@ import { withCart } from "../../contexts/cartContext";
 import "./checkout.css";
 import { useState } from "react";
 import Invoice from "./Invoice";
-import CheckoutForm from "./CheckoutForm";
+import CheckoutForm from "./CheckoutForm.js";
 
 // Component to render the checkout page, when on path /checkout
 function Checkout(context) {

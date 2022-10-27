@@ -1,7 +1,30 @@
-.container {
+.my-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0;
     margin-top: 100px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:first-child {
+    background-color: #008CBA;
+}
+.total {
+    float: right;
 }
