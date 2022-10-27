@@ -1,6 +1,6 @@
 import { withCart } from "../contexts/cartContext";
 import Products from './products';
-import Cart from './cart';
+import Cart from './cart/cart';
 import Checkout from "./checkout";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ProductDetails from "./productDetails";
