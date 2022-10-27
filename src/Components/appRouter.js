@@ -2,7 +2,7 @@ import { withCart } from "../contexts/cartContext";
 import Products from './products/Products';
 import Cart from './cart/Cart';
 import Checkout from "./checkout/Checkout";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import ProductDetails from "./productDetails/ProductDetails";
 import Nav from './nav/Nav';
 
@@ -14,7 +14,7 @@ import Nav from './nav/Nav';
 // `Nav` is the common navigation bar shown on all pages.
 function AppRouter(context) {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Nav></Nav>
             <Routes>
                 <Route path="/" element={<Navigate to="/products"/> }/>
@@ -23,7 +23,7 @@ function AppRouter(context) {
                 <Route path="/cart" element={ <Cart /> }/>
                 <Route path="/checkout" element={ <Checkout /> }/>
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
