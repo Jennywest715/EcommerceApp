@@ -2,6 +2,7 @@
   "name": "ecommerceapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jennywest715.github.io/ecommerceapp",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -18,8 +19,8 @@
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
     "sort-by": "^1.2.0",
-    "web-vitals": "^2.1.4",
-    "homepage": "https://jennywest715.github.io/ecommerceapp"
+    "web-vitals": "^2.1.4"
+
   },
   "scripts": {
     "start": "react-scripts start",
